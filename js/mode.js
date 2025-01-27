@@ -2,7 +2,7 @@ const body = document.querySelector("body");
 const darkBtn = document.getElementById("dark-btn");
 const lightBtn = document.getElementById("light-btn");
 
-//toggle mode
+// toggle mode
 const modeLocal = localStorage.getItem("mode");
 
 if (modeLocal) {
@@ -21,7 +21,6 @@ darkBtn.addEventListener("click", () => {
   toggleModeBtn();
   localStorage.setItem("mode", "dark-mode");
 });
-
 lightBtn.addEventListener("click", () => {
   toggleModeBtn();
   localStorage.setItem("mode", "");
